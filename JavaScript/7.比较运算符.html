@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 10;
+        var b = 20;
+        console.log(a < b); // true
+        console.log(a > b); // false
+        console.log(a <= b); // true
+        console.log(a >= b); // false
+        console.log(a == b); // false
+        console.log(a != b); // true
+
+        var c = 10;
+        var d = "10";
+        console.log(c == d); // true，==会进行类型转换
+        console.log(c === d); // false，===不会进行类型转换
+        console.log(c !== d); // true，!==不会进行类型转换
+        console.log(c !== parseInt(d)); // false，parseInt()将字符串转换为整数
+    </script>
+</body>
+</html>

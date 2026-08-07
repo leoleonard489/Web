@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            float: left;
+            /* 浮动：向内嵌套 */
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+        }
+        img{
+            width: 300px;
+            /* float: left; */
+            /* 照片浮动中间的空隙就没了 */
+        }
+        ul li{
+            float:left;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="container"></div>
+    <div class="img">
+        <img src="../图片/1.webp" alt="">
+        <img src="../图片/1.webp" alt="">
+    </div>
+    <ul>
+        <li><a href="https://www.baidu.com/">导航1</a></li>
+        <li><a href="https://www.4399.com/">导航2</a></li>
+        <li><a href="https://cn.bing.com/images/search?q=%e5%b0%8f+%e5%a7%90%e5%a7%90&qpvt=%e5%b0%8f%e5%a7%90%e5%a7%90&form=IGRE&first=1">导航3</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 0.3为透明度，0为完全透明，1为完全不透明 */
+            /* 10px为水平偏移量，10px为垂直偏移量 */
+            /* 5px为模糊半径 */
+            margin: 250px auto;
+            box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+        }
+        @media screen and (max-width: 768px) {
+            .box {
+                background-color: blue;
+                box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+            }
+            .p1{
+                display: block;
+            }
+            .p2{
+                display: none;
+            }
+            .p3{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 996px) {
+            .box {
+                background-color: green;
+                box-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+            }
+            .p1{
+                display: none;
+            }
+            .p2{
+                display: block;
+            }
+            .p3{
+                display: none;
+            }  
+        }
+        @media screen and (min-width: 996px) {
+            .box {
+                background-color: yellow;
+                box-shadow: 1px 1px 0 rgba(0,0,0,0.9);
+            }
+            .p1{
+                display: none;
+            }
+            .p2{
+                display: none;
+            }
+            .p3{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p class="p1">现在是手机</p>
+    <p class="p2">现在是平板</p>
+    <p class="p3">现在是电脑</p>
+</body>
+</html>

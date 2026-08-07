@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: #555555;
+            display: flex;
+            /* 默认弹性盒子是横向摆放的 */
+            flex-direction: row;
+            /* row:水平摆放 */
+            /* row-reverse:水平摆放，反向 */
+            /* column:垂直摆放 */
+            /* column-reverse:垂直摆放，反向 */
+            justify-content:center;
+            /* flex-start:上对齐 */
+            /* flex-end:下对齐 */
+            /* center:居中对齐 */
+            align-items:center;
+            /* flex-start:左对齐 */
+            /* flex-end:右对齐 */
+            /* center:居中对齐 */
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            flex: 3;
+            /* flex:权重 */
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            flex: 2;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

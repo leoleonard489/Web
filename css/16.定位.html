@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            /* relative:相对定位，默认值 */
+            left: 100px;
+            top: 100px;
+            z-index: 1;
+            /* 谁的z-index值大，谁就会在上面 */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            /* absolute:绝对定位 */
+            /* 绝对定位会有浮动的问题 */
+            left: 100px;
+            top: 100px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: fixed;
+            /* fixed:固定定位 */
+            /* 如果页面滚动，固定定位不会动 */
+            left: 150px;
+            top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div><img src="../图片/2.jpg" alt="小姐姐"></div>
+    <div><img src="../图片/2.jpg" alt="小姐姐"></div>
+</body>
+</html>
