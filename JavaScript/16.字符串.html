@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 字符串换行需要加上反斜杠\，否则会报错
+        var str = "Hello,\
+        World!";
+        document.write(str);
+        document.write("<br>");
+
+        //  length是长度
+        document.write(str.length);
+        
+        //  charAt()是获取指定位置的字符
+        document.write("<br>");
+        document.write(str.charAt(0));
+        document.write("<br>");
+        document.write(str.charAt(str.length-1));
+        
+        // concat()是连接字符串
+        document.write("<br>");
+        var str1 = "Hello,";
+        var str2 = "World";
+        var str3 = "!";
+        document.write(str1.concat(str2, str3));
+
+        // 字符串是可以相加的
+        document.write("<br>");
+        document.write(str1 + str2 + str3);
+
+        // substring()是截取字符串
+        document.write("<br>");
+        var str4 = "Hello,World!";
+        document.write(str4.substring(0, 5)); // 截取前5个字符
+
+        // substr()是截取字符串
+        document.write("<br>");
+        document.write(str4.substr(6, 6)); 
+    </script>
+</body>
+</html>
