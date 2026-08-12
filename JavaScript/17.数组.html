@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1 = ["leo",'messi']
+        document.write(arr1[0])
+        document.write("<br>")
+        arr1[0]=123
+        document.write(arr1[0])
+        document.write("<br>")
+        arr1[4]=234
+        document.write(arr1)
+        document.write("<br>")
+        document.write(arr1.length)
+        document.write("<br>")
+        document.write(arr1[3])
+
+        // 遍历数组
+        for(var i=0;i<arr1.length;i++){
+            console.log(arr1[i]);
+        }
+        for(var i in arr1){
+            console.log(arr1[i]);
+        }
+
+        // Array.isArray判断是否为数组
+        console.log(Array.isArray(arr1));
+
+        // push是添加数据
+        var arr2 = ["hello","hi"]
+        arr2.push("你好")
+        console.log(arr2);
+
+        // pop是删除数组最后的元素
+        arr2.pop()
+        console.log(arr2);
+        
+        // shift是删除数组第一个元素
+        arr2.shift()
+        console.log(arr2);
+
+        // unshift是从头增加数据
+        arr2.unshift("hello")
+        console.log(arr2);
+        
+        // join是将数组转化为字符串
+        console.log(arr2.join());
+        console.log(arr2.join(" "));
+        
+        // concat是数组合并
+        console.log(arr1.concat(arr2));
+        
+        // reverse是颠倒排列
+        var arr3 = [1,2,3,4]
+        console.log(arr3.reverse());
+        
+        // indexOf是查找数组元素下标位置
+        console.log(arr3.indexOf(1));
+        // 存在返回下标，不存在返回-1
+    </script>
+</body>
+</html>

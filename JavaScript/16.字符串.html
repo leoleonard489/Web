@@ -41,6 +41,21 @@
         // substr()是截取字符串
         document.write("<br>");
         document.write(str4.substr(6, 6)); 
+
+        // indexOf()是查找字符串
+        document.write("<br>");
+        document.write(str4.indexOf("World")); // 查找字符串的位置
+        // 匹配到了返回下标，没匹配到返回-1
+
+        // trim()是去掉字符串两端的空格
+        document.write("<br>");
+        var str5 = "  Hello, World!  ";
+        document.write(str5.trim());
+
+        // split()是分割字符串,并转化为数组
+        document.write("<br>")
+        var str6 = "hello|world!"
+        document.write(str6.split("|"))
     </script>
 </body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var user ={
+            name:"leo",
+            age:"18",
+            job:["player","coding player"]
+        }
+        console.log(user.name);
+        
+        // Math对象
+        // 绝对值
+        var num = -100
+        console.log(Math.abs(num));
+        
+        // 最大值
+        console.log(Math.max(1,2,3,4));
+        
+        // 最小值
+        console.log(Math.min(1,23,4));
+
+        // 向下取整
+        console.log(Math.floor(10.9));
+        
+        // 向上取整
+        console.log(Math.ceil(10.1));
+        
+        // 取随机数(0<=i<1)
+        console.log(Math.random());
+        
+        // Date对象
+        var i=Date.now()
+        console.log(i);
+        console.log(new Date(i));
+        console.log(new Date());    //效果是一样的
+        console.log(new Date().getDate());      //获取日期
+        console.log(new Date().getDay());       //获取星期
+        console.log(new Date().getMonth()+1);     //获取月份（从0开始的）
+        console.log(new Date().getFullYear());  //获取年份
+    </script>
+</body>
+</html>

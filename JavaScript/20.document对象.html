@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>hello1</div>
+    <div>hello2</div>
+    <p class="leo">你好</p>
+    <form name="messi"></form>
+    <div id="root">哈哈哈</div>
+    <div class="leo">123</div>
+    <script>
+        // 获取所有对应标签名的元素
+        var div1=document.getElementsByTagName("div")[0]
+        console.log(div1);
+        
+        // 获取所有对应属性的元素
+        var text = document.getElementsByClassName("leo")[0]
+        console.log(text);
+        //更改元素
+        text.innerHTML='hello'
+        
+        //获取所有对应名字的元素
+        var name=document.getElementsByName("messi")
+        console.log(name);
+        
+        // 获取对应id的元素
+        var root=document.getElementById("root")
+        console.log(root);
+        
+        // 获取所有对应选择器的元素(只能获取第一个)
+        var nav=document.querySelector(".leo")
+        //如果是id加#，如果是class加.
+        console.log(nav);
+        
+        //获取全部选择器的元素
+        var navs=document.querySelectorAll(".leo")[1]
+        console.log(navs);
+        
+    </script>
+</body>
+</html>

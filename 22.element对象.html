@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxs{
+            width:200px;
+            height:200px;
+        }
+        .box1{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="root">hello word!</div>
+    <script>
+        var root=document.getElementById("root");
+        root.id="roots"
+        root.className="boxs box1";
+        root.classList.add(123)
+        root.classList.remove(123)
+        /*
+        innerHTML和innerText的区别：
+        innerHTML可以识别标签
+        innerText会把标签识别成一个字符串
+        */
+        var str="<a href='http://www.4399.com'>点击即玩</a>";
+        root.innerHTML=str
+    </script>
+</body>
+</html>

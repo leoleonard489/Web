@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        //创建标签
+        var text=document.createElement("p");
+        //创建文本
+        var content=document.createTextNode("我是文本");
+        //将文本内容插入到标签中
+        text.appendChild(content);
+        //创建id
+        var id=document.createAttribute("id");
+        id.value="root";
+        //将id内容插入到标签中
+        text.setAttributeNode(id)
+        console.log(text);
+        //将标签插入到容器中
+        var container=document.getElementById("container");
+        container.appendChild(text)
+    </script>
+</body>
+</html>
