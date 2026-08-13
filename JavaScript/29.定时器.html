@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        setTimeout(function(){
+            document.write("hello word!")
+        },3000)     //三秒后执行
+
+        var i = 0;
+        setInterval(function(){
+            if(i<10){
+            i++
+            console.log(i);
+            }else{
+                clearInterval()     //关闭定时器
+            }
+        },1000)     //每隔1秒执行一次
+    </script>
+</body>
+</html>

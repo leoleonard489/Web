@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clikHandle()">点击打印你好</button>
+    <button id="btn">点击打印再见</button>
+    <button id="btn1">点击答应hi</button>
+    <script>
+        //HTML事件:缺点:HTML和JS没有分离
+        function clikHandle(){
+            document.write("你好")
+        }
+
+        //DOM0事件:优点:HTML和JS分离;缺点:无法添加多个事件
+        var btn=document.getElementById("btn")
+        btn.onclick=function(){
+            document.write("再见")
+        }
+
+        //DOM2事件:优点:事件不会被覆盖
+        var btn1=document.getElementById("btn1")
+        btn1.addEventListener("click",function(){
+            document.write("hi")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">按我</button>
+    <br>
+    <a href="http://4399.com" id="game">game</a>
+    <script>
+        var btn =document.getElementById("btn");
+        btn.onclick=function(){
+            event.target.innerHTML="就这？"
+        }
+
+        var game=document.getElementById("game");
+        game.onclick=function(e){
+            e.preventDefault();     //阻止默认事件发生
+            event.target.innerHTML="开干！"
+        }
+    </script>
+</body>
+</html>
